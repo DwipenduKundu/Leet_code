@@ -4,9 +4,7 @@
  */
 async function sleep(millis) {
     let p1= new Promise(res=>{
-        setTimeout(()=>{
-            res()
-        },millis);
+        setTimeout(res,millis);
     })
     return p1;
 }
